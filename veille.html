@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veille Technologique - Portfolio E5</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <canvas id="particles-canvas"></canvas>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html"><span class="logo-text">&lt;DEV/&gt;</span><span class="logo-dot">.</span></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="entreprise.html">Entreprise</a></li>
+                <li><a href="realisations.html">Réalisations</a></li>
+                <li><a href="veille.html" class="active">Veille</a></li>
+                <li><a href="bilan.html">Bilan</a></li>
+            </ul>
+            <div class="nav-toggle"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 data-aos="fade-up">Veille Technologique</h1>
+                <p data-aos="fade-up" data-aos-delay="100">Suivi de l'utilisation de l'intelligence artificielle dans l'arbitrage</p>
+            </div>
+        </section>
+
+        <!-- Thème de veille -->
+        <section class="theme-section">
+            <div class="container">
+                <div class="theme-card" data-aos="flip-up">
+                    <div class="theme-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <div class="theme-content">
+                        <h2>Thème : L'intelligence artificielle dans l'arbitrage</h2>
+                        <p>Ce thème suit l'évolution de l'IA appliquée au domaine de l'arbitrage : aide à la décision, analyse automatisée des litiges, traitement du langage naturel pour l'examen de contrats, et outils d'assistance aux arbitres. Une veille menée depuis octobre 2025.</p>
+                        <div class="theme-justification">
+                            <h3><i class="fas fa-question-circle"></i> Justification</h3>
+                            <p>L'arbitrage est un domaine juridique en pleine mutation technologique. L'intégration de l'IA dans les procédures arbitrales soulève des questions importantes d'efficacité, d'impartialité et d'éthique. Comprendre ces évolutions est essentiel pour anticiper les transformations du secteur.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Méthodes et outils de veille -->
+        <section class="sources-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Méthodes & Outils</span>
+                    <h2 class="section-title">Comment je réalise ma veille</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="sources-grid">
+                    <!-- Feedly - méthode PULL -->
+                    <div class="source-card" data-aos="zoom-in">
+                        <i class="fas fa-rss"></i>
+                        <h3>Feedly <span class="badge-pull">PULL</span></h3>
+                        <p class="method-description">Méthode <strong>Pull</strong> : je vais chercher l'information activement en consultant les flux RSS agrégés dans Feedly. Je m'abonne aux sources pertinentes et je consulte régulièrement le tableau de bord pour découvrir les nouveaux articles.</p>
+                        <ul>
+                            <li>Flux RSS de revues juridiques et tech</li>
+                            <li>Blogs spécialisés en LegalTech</li>
+                            <li>Publications académiques sur l'IA & droit</li>
+                        </ul>
+                    </div>
+                    <!-- Google Alertes - méthode PUSH -->
+                    <div class="source-card" data-aos="zoom-in" data-aos-delay="150">
+                        <i class="fab fa-google"></i>
+                        <h3>Google Alertes <span class="badge-push">PUSH</span></h3>
+                        <p class="method-description">Méthode <strong>Push</strong> : l'information vient à moi automatiquement. Google Alertes m'envoie des notifications par e-mail dès qu'un nouvel article correspondant à mes mots-clés est indexé, sans que j'aie besoin de faire une recherche.</p>
+                        <ul>
+                            <li>Alertes : "IA arbitrage", "intelligence artificielle arbitrage"</li>
+                            <li>Alertes : "AI arbitration", "LegalTech arbitration"</li>
+                            <li>Alertes : "algorithme décision juridique"</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Explication Pull vs Push -->
+                <div class="diffusion-card" style="margin-top: 2rem;" data-aos="fade-up">
+                    <h2><i class="fas fa-info-circle"></i> Méthode Pull vs Méthode Push</h2>
+                    <div class="diffusion-methods">
+                        <div class="method">
+                            <i class="fas fa-hand-pointer"></i>
+                            <h3>Méthode Pull</h3>
+                            <p>L'utilisateur <strong>tire</strong> l'information vers lui en allant la consulter activement. Avec <strong>Feedly</strong>, je me connecte à l'agrégateur pour parcourir les flux RSS et sélectionner les articles qui m'intéressent. Je suis acteur de ma veille.</p>
+                        </div>
+                        <div class="method">
+                            <i class="fas fa-bell"></i>
+                            <h3>Méthode Push</h3>
+                            <p>L'information est <strong>poussée</strong> automatiquement vers l'utilisateur. Avec <strong>Google Alertes</strong>, je reçois des e-mails sans action de ma part dès qu'un article correspond à mes mots-clés. Je suis notifié en temps réel.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Articles de veille -->
+<section class="articles-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Articles sélectionnés</span>
+      <h2 class="section-title">Ma veille documentée</h2>
+    </div>
+    <div class="section-divider"></div>
+
+    <div class="articles-controls" data-aos="fade-up">
+      <div class="sort-controls">
+        <span class="sort-label">Trier par</span>
+        <button class="sort-btn active" data-sort="date">Date</button>
+        <button class="sort-btn" data-sort="note">Note</button>
+      </div>
+      <div class="filter-controls">
+        <span class="filter-label">Filtrer par note</span>
+        <button class="filter-star active" data-star="all">Tous</button>
+        <button class="filter-star" data-star="5">5</button>
+        <button class="filter-star" data-star="4">4</button>
+        <button class="filter-star" data-star="3">3</button>
+      </div>
+    </div>
+
+    <div class="articles-grid" id="articles-grid">
+      <div class="article-card" data-date="2025-11-16" data-note="5" data-aos="fade-up">
+        <div class="article-header">
+          <span class="article-source"><i class="fas fa-rss"></i> Management & Datascience</span>
+          <span class="article-date">16 novembre 2024</span>
+        </div>
+        <h3>La révolution numérique et l'IA dans l'arbitrage footballistique</h3>
+        <div class="article-rating"><span class="stars"></span><span class="rating-value">5/5</span></div>
+        <p class="article-summary">Cet article explique comment l'IA et les technologies numériques transforment l'arbitrage au football, avec la VAR et la détection semi-automatisée du hors-jeu.</p>
+        <div class="article-links"><a href="https://management-datascience.org/articles/36340/" class="article-link" target="_blank"><i class="fas fa-external-link-alt"></i> Lire l'article</a></div>
+      </div>
+
+      <div class="article-card" data-date="2025-06-17" data-note="5" data-aos="fade-up" data-aos-delay="100">
+        <div class="article-header">
+          <span class="article-source"><i class="fas fa-rss"></i> ECIS 2025 Proceedings</span>
+          <span class="article-date">17 juin 2025</span>
+        </div>
+        <h3>Integrating Artificial Intelligence into Football Refereeing</h3>
+        <div class="article-rating"><span class="stars"></span><span class="rating-value">5/5</span></div>
+        <p class="article-summary">Cette recherche analyse comment l'IA peut aider les arbitres à prendre de meilleures décisions tout en gardant un équilibre avec le jugement humain.</p>
+        <div class="article-links"><a href="https://aisel.aisnet.org/ecis2025/digitsports/digitsports/1/" class="article-link" target="_blank"><i class="fas fa-external-link-alt"></i> Lire l'article</a></div>
+      </div>
+
+      <div class="article-card" data-date="2026-01-21" data-note="4" data-aos="fade-up" data-aos-delay="200">
+        <div class="article-header">
+          <span class="article-source"><i class="fas fa-rss"></i> So Foot</span>
+          <span class="article-date">21 janvier 2026</span>
+        </div>
+        <h3>L'IA, solution ou fantasme pour les arbitres ?</h3>
+        <div class="article-rating"><span class="stars"></span><span class="rating-value">4/5</span></div>
+        <p class="article-summary">L'article questionne la capacité de l'IA à aider les arbitres dans un contexte où leurs décisions sont de plus en plus critiquées.</p>
+        <div class="article-links"><a href="https://www.sofoot.com/articles/comment-lintelligence-artificielle-peut-davantage-aider-les-arbitres-de-plus-en-plus-critiques-d..." class="article-link" target="_blank"><i class="fas fa-external-link-alt"></i> Lire l'article</a></div>
+      </div>
+
+      <div class="article-card" data-date="2026-01-12" data-note="4" data-aos="fade-up" data-aos-delay="300">
+        <div class="article-header">
+          <span class="article-source"><i class="fas fa-rss"></i> ParisFans</span>
+          <span class="article-date">12 janvier 2026</span>
+        </div>
+        <h3>L'IA se rapproche de l'arbitrage du football en France !</h3>
+        <div class="article-rating"><span class="stars"></span><span class="rating-value">4/5</span></div>
+        <p class="article-summary">Cet article montre comment l'IA pourrait s'intégrer davantage à l'arbitrage français pour améliorer la précision des décisions.</p>
+        <div class="article-links"><a href="https://www.parisfans.fr/autour-du-psg/lia-se-rapproche-de-larbitrage-du-football-en-france-894196.html" class="article-link" target="_blank"><i class="fas fa-external-link-alt"></i> Lire l'article</a></div>
+      </div>
+
+      <div class="article-card" data-date="2024-07-01" data-note="4" data-aos="fade-up" data-aos-delay="400">
+        <div class="article-header">
+          <span class="article-source"><i class="fas fa-rss"></i> Nature</span>
+          <span class="article-date">2024</span>
+        </div>
+        <h3>AI & robotics briefing: How AI referees are shaking up football</h3>
+        <div class="article-rating"><span class="stars"></span><span class="rating-value">4/5</span></div>
+        <p class="article-summary">Cette synthèse présente l'arrivée des technologies d'IA dans l'arbitrage du football et leurs effets sur les décisions en match.</p>
+        <div class="article-links"><a href="https://www.nature.com/articles/d41586-024-02064-7" class="article-link" target="_blank"><i class="fas fa-external-link-alt"></i> Lire l'article</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Mode de diffusion -->
+        <section class="diffusion-section">
+            <div class="container">
+                <div class="diffusion-card" data-aos="fade-up">
+                    <h2><i class="fas fa-share-alt"></i> Mode de diffusion de ma veille</h2>
+                    <div class="diffusion-methods">
+                        <div class="method">
+                            <i class="fas fa-rss"></i>
+                            <h3>Feedly (Pull)</h3>
+                            <p>Agrégation active des flux RSS : je consulte et sélectionne les articles qui m'intéressent depuis mon tableau de bord Feedly.</p>
+                        </div>
+                        <div class="method">
+                            <i class="fab fa-google"></i>
+                            <h3>Google Alertes (Push)</h3>
+                            <p>Notifications automatiques par e-mail dès qu'un nouvel article correspondant à mes mots-clés est indexé par Google.</p>
+                        </div>
+                        <div class="method">
+                            <i class="fas fa-bookmark"></i>
+                            <h3>Archivage et synthèse</h3>
+                            <p>Les articles sélectionnés sont annotés et classés par thématique pour constituer une base de connaissance structurée.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-info">
+                        <h3>Isham Salhatou</h3>
+                        <p>Étudiant en BTS SIO SLAM</p>
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="entreprise.html">Entreprise</a></li>
+                            <li><a href="realisations.html">Réalisations</a></li>
+                            <li><a href="veille.html">Veille</a></li>
+                            <li><a href="bilan.html">Bilan</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h4>Contact</h4>
+                        <p><i class="fas fa-envelope"></i> salhatouisham@gmail.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Paris, France</p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Isham - Portfolio E5 BTS SIO</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>

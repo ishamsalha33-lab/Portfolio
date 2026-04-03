@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réalisations - Portfolio E5</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <canvas id="particles-canvas"></canvas>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html"><span class="logo-text">&lt;DEV/&gt;</span><span class="logo-dot">.</span></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="entreprise.html">Entreprise</a></li>
+                <li><a href="realisations.html" class="active">Réalisations</a></li>
+                <li><a href="veille.html">Veille</a></li>
+                <li><a href="bilan.html">Bilan</a></li>
+            </ul>
+            <div class="nav-toggle"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 data-aos="fade-up">Mes réalisations</h1>
+                <p data-aos="fade-up" data-aos-delay="100">Projets académiques et professionnels récents</p>
+            </div>
+        </section>
+
+        <section class="projects-filter">
+            <div class="container">
+                <div class="filter-buttons" data-aos="fade-up">
+                    <button class="filter-btn active" data-filter="all">Tous</button>
+                    <button class="filter-btn" data-filter="school">Projets scolaires</button>
+                    <button class="filter-btn" data-filter="work">Projets professionnels</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-gallery">
+            <div class="container">
+                <div class="projects-grid">
+                    
+                    <div class="project-card" data-category="work" data-aos="fade-up">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=600&auto=format&fit=crop" alt="Catalogue de Vêtements Vue.js">
+                            <div class="project-overlay"><button class="project-detail-btn" data-project="1"><i class="fas fa-search-plus"></i> Détails</button></div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Catalogue de Vêtements</h3>
+                            <div class="project-tags"><span>Vue.js</span><span>JavaScript</span><span>Frontend</span></div>
+                            <p>Application web avec gestion de panier et système de filtrage dynamique.</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="school" data-aos="fade-up">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?q=80&w=600&auto=format&fit=crop" alt="SmartBike E-commerce PHP/MySQL">
+                            <div class="project-overlay"><button class="project-detail-btn" data-project="2"><i class="fas fa-search-plus"></i> Détails</button></div>
+                        </div>
+                        <div class="project-info">
+                            <h3>E-commerce "SmartBike"</h3>
+                            <div class="project-tags"><span>HTML|CSS</span><span>PHP</span><span>MySQL</span><span>Fullstack</span></div>
+                            <p>Vente de vélos avec base de données, panier et moteur de recherche.</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="school" data-aos="fade-up">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=600&auto=format&fit=crop" alt="Jeu Mobile Pacman Java">
+                            <div class="project-overlay"><button class="project-detail-btn" data-project="3"><i class="fas fa-search-plus"></i> Détails</button></div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Jeu Mobile Type Pacman</h3>
+                            <div class="project-tags"><span>Android Studio</span><span>Java</span><span>Mobile</span></div>
+                            <p>Développement d'un jeu d'arcade mobile inspiré du classique Pacman.</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="work" data-aos="fade-up">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1586165368502-1bad197a6461?q=80&w=600&auto=format&fit=crop" alt="Jeu d'échecs Web JavaScript">
+                            <div class="project-overlay"><button class="project-detail-btn" data-project="4"><i class="fas fa-search-plus"></i> Détails</button></div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Jeu d'échecs Web (En cours)</h3>
+                            <div class="project-tags"><span>JavaScript</span><span>HTML|CSS</span><span>Algorithme</span></div>
+                            <p>Développement d'un moteur de jeu d'échecs jouable sur navigateur.</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="work" data-aos="fade-up">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1611162616475-7b2a63cf936d?q=80&w=600&auto=format&fit=crop" alt="Intégration WordPress">
+                            <div class="project-overlay"><button class="project-detail-btn" data-project="6"><i class="fas fa-search-plus"></i> Détails</button></div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Intégration WordPress</h3>
+                            <div class="project-tags"><span>WordPress</span><span>CMS</span><span>No-code</span></div>
+                            <p>Création et intégration de pages personnalisées pour un site WordPress.</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="school" data-aos="fade-up">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=600&auto=format&fit=crop" alt="Infrastructure Réseau Cisco">
+                            <div class="project-overlay"><button class="project-detail-btn" data-project="7"><i class="fas fa-search-plus"></i> Détails</button></div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Infrastructure Réseau</h3>
+                            <div class="project-tags"><span>Cisco</span><span>Réseau</span><span>Simulateur</span></div>
+                            <p>Conception du réseau local d'une école via Cisco Packet Tracer.</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="school" data-aos="fade-up">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?q=80&w=600&auto=format&fit=crop" alt="Base de données MySQL école">
+                            <div class="project-overlay"><button class="project-detail-btn" data-project="8"><i class="fas fa-search-plus"></i> Détails</button></div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Base de données École</h3>
+                            <div class="project-tags"><span>MySQL</span><span>SQL</span><span>Modélisation</span></div>
+                            <p>Modélisation et création d'une base de données pour une école fictive.</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="work" data-aos="fade-up">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=600&auto=format&fit=crop" alt="DataVisualisation Python JavaScript">
+                            <div class="project-overlay"><button class="project-detail-btn" data-project="9"><i class="fas fa-search-plus"></i> Détails</button></div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Site de DataVisualisation</h3>
+                            <div class="project-tags"><span>Python</span><span>JS</span><span>HTML|CSS</span><span>Data</span></div>
+                            <p>Visualisation de données interactive avec traitement Python en arrière-plan.</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="school" data-aos="fade-up">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=600&auto=format&fit=crop" alt="Portfolio E5 BTS SIO">
+                            <div class="project-overlay"><button class="project-detail-btn" data-project="10"><i class="fas fa-search-plus"></i> Détails</button></div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Portfolio Développeur</h3>
+                            <div class="project-tags"><span>HTML|CSS</span><span>JavaScript</span><span>AOS</span></div>
+                            <p>Création de ce portfolio pour l'épreuve E5 du BTS SIO.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="project-modal" id="project-modal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.8);">
+            <div class="modal-content" style="background-color: #1a1a1a; color: #fff; margin: 10% auto; padding: 20px; border: 1px solid #333; width: 80%; max-width: 700px; border-radius: 8px; position: relative;">
+                <span class="modal-close" style="color: #aaa; position: absolute; top: 10px; right: 25px; font-size: 28px; font-weight: bold; cursor: pointer;">&times;</span>
+                <div class="modal-body">
+                    <h2 id="modal-title" style="margin-top: 0; color: #fff;"></h2>
+                    <div class="modal-details" style="display: grid; gap: 15px;">
+                        <div class="detail-section">
+                            <h3 style="color: #64ffda;"><i class="fas fa-bullseye"></i> Objectif</h3>
+                            <p id="modal-objectif" style="margin: 5px 0 0 0; color: #ccc;"></p>
+                        </div>
+                        <div class="detail-section">
+                            <h3 style="color: #64ffda;"><i class="fas fa-user"></i> Mon rôle</h3>
+                            <p id="modal-role" style="margin: 5px 0 0 0; color: #ccc;"></p>
+                        </div>
+                        <div class="detail-section">
+                            <h3 style="color: #64ffda;"><i class="fas fa-cogs"></i> Compétences mobilisées</h3>
+                            <ul id="modal-competences" style="margin: 5px 0 0 0; padding-left: 20px; color: #ccc;"></ul>
+                        </div>
+                        <div class="detail-section">
+                            <h3 style="color: #64ffda;"><i class="fas fa-chart-line"></i> Bilan / Apprentissages</h3>
+                            <p id="modal-bilan" style="margin: 5px 0 0 0; color: #ccc;"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-info">
+                        <h3>Isham Salhatou</h3>
+                        <p>Étudiant en BTS SIO SLAM</p>
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="entreprise.html">Entreprise</a></li>
+                            <li><a href="realisations.html">Réalisations</a></li>
+                            <li><a href="veille.html">Veille</a></li>
+                            <li><a href="bilan.html">Bilan</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h4>Contact</h4>
+                        <p><i class="fas fa-envelope"></i> salhatouisham@gmail.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Paris, France</p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Isham Salhatou - Portfolio E5 BTS SIO</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="js/main.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 1. Les données des projets
+            const projectsData = {
+                '1': {
+                    title: 'Catalogue de Vêtements (Vue.js)',
+                    objectif: 'Développer une interface frontend réactive pour visualiser un catalogue de produits avec filtres et panier sans rechargement de page.',
+                    role: 'Développeur Frontend principal.',
+                    competences: ['Framework Vue.js', 'Gestion d\'état', 'Filtrage dynamique', 'HTML|CSS'],
+                    bilan: 'Maîtrise accrue du framework Vue.js et de la réactivité pour une meilleure UX.'
+                },
+                '2': {
+                    title: 'E-commerce "SmartBike" (PHP/MySQL)',
+                    objectif: 'Créer un site web complet de vente de vélos, incluant la gestion d\'un catalogue dynamique depuis une base de données.',
+                    role: 'Conception Fullstack (Base de données et Frontend/Backend).',
+                    competences: ['Programmation PHP', 'Requêtes MySQL', 'Gestion de Panier', 'Moteur de Recherche'],
+                    bilan: 'Compréhension du cycle complet d\'une application web transactionnelle.'
+                },
+                '3': {
+                    title: 'Jeu Mobile Type Pacman (Android Studio)',
+                    objectif: 'Développer un jeu mobile fonctionnel sur Android reprenant les mécaniques principales de Pacman.',
+                    role: 'Développeur Mobile Mobile.',
+                    competences: ['Android Studio', 'Langage Java', 'Gestion du Canvas', 'Logique de jeu'],
+                    bilan: 'Première expérience réussie dans le développement de jeux sur mobile.'
+                },
+                '4': {
+                    title: 'Jeu d\'échecs Web (En cours)',
+                    objectif: 'Implémenter les règles complètes du jeu d\'échecs dans une application web interactive.',
+                    role: 'Développeur unique.',
+                    competences: ['JavaScript Algorithmique', 'Manipulation du DOM', 'Algorithme de jeu'],
+                    bilan: 'Défi complexe de logique et d\'algorithmique en JavaScript.'
+                },
+                '5': {
+                    title: 'Répertoire de données (Symfony)',
+                    objectif: 'Créer une application web de gestion de répertoire en respectant l\'architecture MVC avec le framework Symfony.',
+                    role: 'Développeur Backend Backend.',
+                    competences: ['Framework Symfony', 'ORM Doctrine', 'Moteur Twig', 'Architecture MVC'],
+                    bilan: 'Apprentissage de la structuration professionnelle d\'un projet PHP avec un framework.'
+                },
+                '6': {
+                    title: 'Intégration WordPress',
+                    objectif: 'Configurer et personnaliser un CMS pour répondre aux besoins d\'un client, incluant l\'intégration de contenus spécifiques.',
+                    role: 'Intégrateur Web.',
+                    competences: ['CMS WordPress', 'Configuration de Thèmes', 'Gestion de Plugins'],
+                    bilan: 'Capacité à déployer rapidement une solution web via un CMS.'
+                },
+                '7': {
+                    title: 'Infrastructure Réseau École (Cisco)',
+                    objectif: 'Concevoir et simuler l\'architecture réseau complète d\'un établissement scolaire sur Cisco Packet Tracer.',
+                    role: 'Architecte Réseau.',
+                    competences: ['Cisco Packet Tracer', 'Adressage IP (IPv4)', 'VLAN', 'Routage'],
+                    bilan: 'Validation des concepts théoriques de réseau par la simulation.'
+                },
+                '8': {
+                    title: 'Base de données École fictive',
+                    objectif: 'Modéliser et créer le schéma d\'une base de données MySQL pour gérer les élèves, professeurs, cours et notes d\'une école.',
+                    role: 'Concepteur de Base de données.',
+                    competences: ['Modélisation Conceptuelle (Merise)', 'Langage SQL', 'MySQL', 'Normalisation'],
+                    bilan: 'Maîtrise de la conception de bases de données relationnelles robustes.'
+                },
+                '9': {
+                    title: 'Site de DataVisualisation',
+                    objectif: 'Créer un tableau de bord web pour visualiser des données complexes en utilisant des scripts de traitement.',
+                    role: 'Développeur Fullstack Data.',
+                    competences: ['Analyse de données (Python)', 'Visualisation (JS / HTML)', 'Intégration'],
+                    bilan: 'Compétence dans le lien entre traitement de données et affichage frontend.'
+                },
+                '10': {
+                    title: 'Portfolio Développeur E5',
+                    objectif: 'Concevoir et réaliser un site portfolio pour présenter mes compétences et réalisations pour le BTS SIO.',
+                    role: 'Développeur unique.',
+                    competences: ['Design Web', 'HTML|CSS', 'JavaScript Animé', 'AOS Library'],
+                    bilan: 'Projet de synthèse mettant en valeur mon parcours et mes projets.'
+                }
+            };
+
+            // 2. Gestion de la modale
+            const modal = document.getElementById('project-modal');
+            const closeBtn = document.querySelector('.modal-close');
+            const modalTitle = document.getElementById('modal-title');
+            const modalObjectif = document.getElementById('modal-objectif');
+            const modalRole = document.getElementById('modal-role');
+            const modalCompetences = document.getElementById('modal-competences');
+            const modalBilan = document.getElementById('modal-bilan');
+
+            // Ouvrir la modale au clic sur un bouton "Détails"
+            document.querySelectorAll('.project-detail-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    const projectId = this.getAttribute('data-project');
+                    const project = projectsData[projectId];
+
+                    if (project) {
+                        // Remplir la modale avec les données
+                        modalTitle.textContent = project.title;
+                        modalObjectif.textContent = project.objectif;
+                        modalRole.textContent = project.role;
+                        modalBilan.textContent = project.bilan;
+
+                        // Remplir la liste des compétences
+                        modalCompetences.innerHTML = '';
+                        project.competences.forEach(comp => {
+                            const li = document.createElement('li');
+                            li.textContent = comp;
+                            modalCompetences.appendChild(li);
+                        });
+
+                        // Afficher la modale
+                        modal.style.display = 'block';
+                        document.body.style.overflow = 'hidden'; // Empêcher le défilement de la page
+                    }
+                });
+            });
+
+            // Fermer la modale
+            function closeModal() {
+                modal.style.display = 'none';
+                document.body.style.overflow = ''; // Rétablir le défilement
+            }
+
+            closeBtn.addEventListener('click', closeModal);
+
+            // Fermer en cliquant à l'extérieur de la modale
+            window.addEventListener('click', function(event) {
+                if (event.target === modal) {
+                    closeModal();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio E5 - Accueil</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Outfit:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Particules en arrière-plan -->
+    <canvas id="particles-canvas"></canvas>
+    
+    <!-- Cursor personnalisé -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-text">&lt;DEV/&gt;</span>
+                    <span class="logo-dot">.</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="entreprise.html">Entreprise</a></li>
+                <li><a href="realisations.html">Réalisations</a></li>
+                <li><a href="veille.html">Veille</a></li>
+                <li><a href="bilan.html">Bilan</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-badge" data-aos="fade-up">
+                    <i class="fas fa-code"></i> Étudiant en BTS SIO
+                </div>
+                <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+                    <span class="title-line">Isham Salhatou</span>
+                    <span class="title-gradient">Développeur Full Stack</span>
+                </h1>
+                <div class="hero-typed" data-aos="fade-up" data-aos-delay="200">
+                    <span class="typed-text"></span>
+                    <span class="typed-cursor">|</span>
+                </div>
+                <p class="hero-description" data-aos="fade-up" data-aos-delay="300">
+                    19 ans | BTS SIO option SLAM
+                </p>
+                <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
+                    <a href="realisations.html" class="btn btn-primary">
+                        <i class="fas fa-arrow-right"></i> Voir mes réalisations
+                    </a>
+                    <a href="#competences" class="btn btn-outline">
+                        <i class="fas fa-chevron-down"></i> Compétences
+                    </a>
+                </div>
+            </div>
+            <div class="hero-stats" data-aos="fade-left" data-aos-delay="500">
+                <div class="stat-card">
+                    <div class="stat-number" data-count="11">0</div>
+                    <div class="stat-label">Projets réalisés</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Compétences Section -->
+        <section id="competences" class="competences">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Mon arsenal</span>
+                    <h2 class="section-title">Compétences <span class="gradient-text">Techniques</span></h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category" data-aos="fade-up">
+                        <div class="category-icon"><i class="fas fa-globe"></i></div>
+                        <h3>Frontend</h3>
+                        <div class="skills-list">
+                            <div class="skill-item" data-skill="95">
+                                <span>React</span>
+                                <div class="skill-bar"><div class="skill-progress"></div></div>
+                            </div>
+                            <div class="skill-item" data-skill="90">
+                                <span>Vue.js</span>
+                                <div class="skill-bar"><div class="skill-progress"></div></div>
+                            </div>
+                            <div class="skill-item" data-skill="90">
+                                <span>CSS</span>
+                                <div class="skill-bar"><div class="skill-progress"></div></div>
+                            </div>
+                            <div class="skill-item" data-skill="90">
+                                <span>HTML</span>
+                                <div class="skill-bar"><div class="skill-progress"></div></div>
+                            </div>                                                      
+                        </div>
+                    </div>
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                        <div class="category-icon"><i class="fas fa-server"></i></div>
+                        <h3>Backend</h3>
+                        <div class="skills-list">
+                            <div class="skill-item" data-skill="85">
+                                <span>Python</span>
+                                <div class="skill-bar"><div class="skill-progress"></div></div>
+                            </div>
+                            <div class="skill-item" data-skill="85">
+                                <span>PHP</span>
+                                <div class="skill-bar"><div class="skill-progress"></div></div>
+                            </div>
+                            <div class="skill-item" data-skill="65">
+                                <span>Java</span>
+                                <div class="skill-bar"><div class="skill-progress"></div></div>
+                            </div>
+                            <div class="skill-item" data-skill="70">
+                                <span>JavaScript</span>
+                                <div class="skill-bar"><div class="skill-progress"></div></div>
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                        <div class="category-icon"><i class="fas fa-database"></i></div>
+                        <h3>Base de données</h3>
+                        <div class="skills-list">
+                            <div class="skill-item" data-skill="80">
+                                <span>MySQL</span>
+                                <div class="skill-bar"><div class="skill-progress"></div></div>
+                            </div>
+                            <div class="skill-item" data-skill="85">
+                                <span>MongoDB</span>
+                                <div class="skill-bar"><div class="skill-progress"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                        <div class="category-icon"><i class="fas fa-cloud"></i></div>
+                        <h3>DevOps & Outils</h3>
+                        <div class="skills-list">
+                            <div class="skill-item" data-skill="85">
+                                <span>Docker</span>
+                                <div class="skill-bar"><div class="skill-progress"></div></div>
+                            </div>
+                            <div class="skill-item" data-skill="90">
+                                <span>Git</span>
+                                <div class="skill-bar"><div class="skill-progress"></div></div>
+                            </div>
+                            <div class="skill-item" data-skill="90">
+                                <span>Google Drive</span>
+                                <div class="skill-bar"><div class="skill-progress"></div></div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Soft Skills -->
+        <section class="soft-skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Savoir-être</span>
+                    <h2 class="section-title">Compétences <span class="gradient-text">Humaines</span></h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="soft-grid">
+                    <div class="soft-card" data-aos="flip-left">
+                        <i class="fas fa-users"></i>
+                        <h3>Travail d'équipe</h3>
+                        <p>Méthodes agiles, pair programming, collaboration transverse</p>
+                    </div>
+                    <div class="soft-card" data-aos="flip-left" data-aos-delay="100">
+                        <i class="fas fa-comments"></i>
+                        <h3>Communication</h3>
+                        <p>Documentation technique, expression orale, relation client</p>
+                    </div>
+                    <div class="soft-card" data-aos="flip-left" data-aos-delay="200">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3>Résolution de problèmes</h3>
+                        <p>Analyse, debug, veille technologique proactive</p>
+                    </div>
+                    <div class="soft-card" data-aos="flip-left" data-aos-delay="300">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Adaptabilité</h3>
+                        <p>Apprentissage continu, veille, polyvalence technique</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-info">
+                        <h3>Isham Salhatou</h3>
+                        <p>Étudiant en BTS SIO SLAM</p>
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="entreprise.html">Entreprise</a></li>
+                            <li><a href="realisations.html">Réalisations</a></li>
+                            <li><a href="veille.html">Veille</a></li>
+                            <li><a href="bilan.html">Bilan</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h4>Contact</h4>
+                        <p><i class="fas fa-envelope"></i> salhatouisham@gmail.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Paris, France</p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Isham Salhatou - Portfolio E5 BTS SIO</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

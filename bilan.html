@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilan - Portfolio E5</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <canvas id="particles-canvas"></canvas>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html"><span class="logo-text">&lt;DEV/&gt;</span><span class="logo-dot">.</span></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="entreprise.html">Entreprise</a></li>
+                <li><a href="realisations.html">Réalisations</a></li>
+                <li><a href="veille.html">Veille</a></li>
+                <li><a href="bilan.html" class="active">Bilan</a></li>
+            </ul>
+            <div class="nav-toggle"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 data-aos="fade-up">Mon bilan de formation</h1>
+                <p data-aos="fade-up" data-aos-delay="100">Retour sur 2 années de BTS SIO SLAM</p>
+            </div>
+        </section>
+
+        <!-- Parcours timeline -->
+        <section class="parcours-timeline">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Mon parcours</span>
+                    <h2 class="section-title">2 années de formation</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="bilan-timeline">
+                    <div class="bilan-step" data-aos="fade-right">
+                        <div class="step-icon"><i class="fas fa-rocket"></i></div>
+                        <div class="step-content">
+                            <h3>Première année - Les fondamentaux</h3>
+                            <p>Découverte des bases du développement (HTML/CSS, JavaScript, PHP), algorithmique, bases de données (SQL). Premiers projets en équipe et découverte des méthodes agiles.</p>
+                        </div>
+                    </div>
+                    <div class="bilan-step" data-aos="fade-left">
+                        <div class="step-icon"><i class="fas fa-code-branch"></i></div>
+                        <div class="step-content">
+                            <h3>Spécialisation SLAM</h3>
+                            <p>Choix de l'option Solutions Logicielles et Applications Métiers. Approfondissement en développement full-stack : React, Node.js, Java.</p>
+                        </div>
+                    </div>
+                    <div class="bilan-step" data-aos="fade-right">
+                        <div class="step-icon"><i class="fas fa-building"></i></div>
+                        <div class="step-content">
+                            <h3>Alternance chez Steve Mind</h3>
+                            <p>Intégration en entreprise avec des missions concrètes. Découverte du monde professionnel, des cycles de production, du travail en équipe et des contraintes métier.</p>
+                        </div>
+                    </div>
+                    <div class="bilan-step" data-aos="fade-left">
+                        <div class="step-icon"><i class="fas fa-chart-line"></i></div>
+                        <div class="step-content">
+                            <h3>Deuxième année - Montée en compétences</h3>
+                            <p>Projets complexes, veille technologique, préparation à la certification, développement de l'autonomie et de la prise de décision technique.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Compétences acquises -->
+        <section class="acquired-skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Ce que j'ai appris</span>
+                    <h2 class="section-title">Compétences acquises</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="skills-acquired-grid">
+                    <div class="skill-acquired-card" data-aos="flip-left">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Techniques</h3>
+                        <ul>
+                            <li>Développement full-stack</li>
+                            <li>Bases de données relationnelles et SQL</li>
+                        </ul>
+                    </div>
+                    <div class="skill-acquired-card" data-aos="flip-left" data-aos-delay="100">
+                        <i class="fas fa-users"></i>
+                        <h3>Relationnelles</h3>
+                        <ul>
+                            <li>Travail en équipe et pair programming</li>
+                            <li>Communication technique</li>
+                            <li>Relation client et recueil du besoin</li>
+                        </ul>
+                    </div>
+                    <div class="skill-acquired-card" data-aos="flip-left" data-aos-delay="200">
+                        <i class="fas fa-search"></i>
+                        <h3>Méthodologiques</h3>
+                        <ul>
+                            <li>Veille technologique structurée</li>
+                            <li>Documentation technique</li>
+                            <li>Tests unitaires et fonctionnels</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ce que j'ai aimé / pas aimé -->
+        <section class="appreciation">
+            <div class="container">
+                <div class="appreciation-grid">
+                    <div class="like-card" data-aos="fade-right">
+                        <div class="card-header">
+                            <i class="fas fa-heart"></i>
+                            <h3>Ce que j'ai aimé</h3>
+                        </div>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> La diversité des technologies abordées</li>
+                            <li><i class="fas fa-check-circle"></i> L'alternance : apprendre en entreprise et à l'école</li>
+                            <li><i class="fas fa-check-circle"></i> Les projets concrets et la liberté créative</li>
+                            <li><i class="fas fa-check-circle"></i> L'entraide entre étudiants et la cohésion de promo</li>
+                            <li><i class="fas fa-check-circle"></i> La découverte de l'IA générative et son potentiel</li>
+                        </ul>
+                    </div>
+                    <div class="dislike-card" data-aos="fade-left">
+                        <div class="card-header">
+                            <i class="fas fa-thumbs-down"></i>
+                            <h3>Points d'amélioration</h3>
+                        </div>
+                        <ul>
+                            <li><i class="fas fa-times-circle"></i> Certaines matières théoriques trop abstraites</li>
+                            <li><i class="fas fa-times-circle"></i> Manque de temps pour approfondir certains sujets</li>
+                            <li><i class="fas fa-times-circle"></i> Rythme soutenu entre école et entreprise</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ce que je ferais différemment -->
+        <section class="different">
+            <div class="container">
+                <div class="different-card" data-aos="zoom-in">
+                    <h2><i class="fas fa-sync-alt"></i> Ce que je ferais différemment</h2>
+                    <div class="different-content">
+                        <div class="different-item">
+                            <h3>Commencer la veille plus tôt</h3>
+                            <p>J'aurais aimé structurer une veille technologique dès la première année pour mieux suivre l'évolution du secteur et anticiper les compétences demandées.</p>
+                        </div>
+                        <div class="different-item">
+                            <h3>Plus de projets open-source</h3>
+                            <p>Participer à des projets open-source aurait été une excellente expérience pour apprendre le travail collaboratif à grande échelle et se constituer un portfolio plus riche.</p>
+                        </div>
+                        <div class="different-item">
+                            <h3>Approfondir DevOps plus tôt</h3>
+                            <p>La maîtrise de Docker, Kubernetes et des pipelines CI/CD est devenue cruciale. J'aurais consacré plus de temps à ces technologies dès le début.</p>
+                        </div>
+                        <div class="different-item">
+                            <h3>Développer mon réseau professionnel</h3>
+                            <p>Participer à davantage de meetups, conférences et événements tech pour rencontrer des professionnels et découvrir des opportunités.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projet professionnel -->
+        <section class="career-project">
+            <div class="container">
+                <div class="career-card" data-aos="fade-up">
+                    <h2><i class="fas fa-rocket"></i> Mon projet professionnel</h2>
+                    <div class="career-content">
+                        <div class="career-short">
+                            <h3>Court terme (1-2 ans)</h3>
+                            <p>Intégrer une équipe de développement en tant que développeur full-stack junior pour continuer à monter en compétences sur des projets variés.</p>
+                        </div>
+                        <div class="career-mid">
+                            <h3>Moyen terme (3-5 ans)</h3>
+                            <p>Devenir développeur senior ou lead technique, avec une spécialisation en architecture logicielle et DevOps. Contribuer à des projets d'envergure et encadrer des juniors.</p>
+                        </div>
+                        <div class="career-long">
+                            <h3>Long terme (5-10 ans)</h3>
+                            <p>Évoluer vers un poste d'architecte logiciel ou de chef de projet technique, ou pourquoi pas créer ma propre structure de services informatiques.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Citation de fin -->
+        <section class="conclusion">
+            <div class="container">
+                <div class="conclusion-quote" data-aos="fade-up">
+                    <i class="fas fa-quote-left"></i>
+                    <p>Ces deux années m'ont permis de passer d'un simple passionné d'informatique à un futur professionnel du développement. Je ressors avec des compétences solides, une méthode de travail efficace et une envie intacte d'apprendre toujours plus.</p>
+                    <i class="fas fa-quote-right"></i>
+                    <span>Isham Salhatou - Promo 2026</span>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-info">
+                        <h3>Isham Salhatou</h3>
+                        <p>Étudiant en BTS SIO SLAM</p>
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="entreprise.html">Entreprise</a></li>
+                            <li><a href="realisations.html">Réalisations</a></li>
+                            <li><a href="veille.html">Veille</a></li>
+                            <li><a href="bilan.html">Bilan</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h4>Contact</h4>
+                        <p><i class="fas fa-envelope"></i> salhatouisham@gmail.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Paris, France</p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Isham Salhatou - Portfolio E5 BTS SIO</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
