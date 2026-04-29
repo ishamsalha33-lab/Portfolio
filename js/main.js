@@ -853,5 +853,5 @@ new LazyLoadObserver();
 // ============================================
 // 17. CONSOLE WELCOME MESSAGE
 // ============================================
-console.log('%c🚀 Portfolio BTS SIO E5 - Thomas Anderson', 'color: #6366f1; font-size: 16px; font-weight: bold;');
+console.log('%c Portfolio BTS SIO E5 - Isham  Salhatou', 'color: #6366f1; font-size: 16px; font-weight: bold;');
 console.log('%cBienvenue sur mon portfolio ! N\'hésitez pas à explorer mes réalisations.', 'color: #94a3b8; font-size: 12px;');

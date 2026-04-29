@@ -168,6 +168,7 @@
                 <span class="modal-close" style="color: #aaa; position: absolute; top: 10px; right: 25px; font-size: 28px; font-weight: bold; cursor: pointer;">&times;</span>
                 <div class="modal-body">
                     <h2 id="modal-title" style="margin-top: 0; color: #fff;"></h2>
+                    <img id="modal-image" src="" alt="" style="width: 100%; max-width: 400px; height: auto; margin: 15px 0; border-radius: 8px; display: none;">
                     <div class="modal-details" style="display: grid; gap: 15px;">
                         <div class="detail-section">
                             <h3 style="color: #64ffda;"><i class="fas fa-bullseye"></i> Objectif</h3>
@@ -261,7 +262,8 @@
                     objectif: 'Configurer et personnaliser un CMS pour répondre aux besoins d\'un client, incluant l\'intégration de contenus spécifiques.',
                     role: 'Intégrateur Web.',
                     competences: ['CMS WordPress', 'Configuration de Thèmes', 'Gestion de Plugins'],
-                    bilan: 'Capacité à déployer rapidement une solution web via un CMS.'
+                    bilan: 'Capacité à déployer rapidement une solution web via un CMS.',
+                    image: 'https://images.unsplash.com/photo-1611162616475-7b2a63cf936d?q=80&w=600&auto=format&fit=crop'
                 },
                 '7': {
                     title: 'Infrastructure Réseau École (Cisco)',
@@ -301,6 +303,7 @@
             const modalRole = document.getElementById('modal-role');
             const modalCompetences = document.getElementById('modal-competences');
             const modalBilan = document.getElementById('modal-bilan');
+            const modalImage = document.getElementById('modal-image');
 
             // Ouvrir la modale au clic sur un bouton "Détails"
             document.querySelectorAll('.project-detail-btn').forEach(button => {
@@ -311,6 +314,13 @@
                     if (project) {
                         // Remplir la modale avec les données
                         modalTitle.textContent = project.title;
+                        if (project.image) {
+                            modalImage.src = project.image;
+                            modalImage.alt = project.title;
+                            modalImage.style.display = 'block';
+                        } else {
+                            modalImage.style.display = 'none';
+                        }
                         modalObjectif.textContent = project.objectif;
                         modalRole.textContent = project.role;
                         modalBilan.textContent = project.bilan;
